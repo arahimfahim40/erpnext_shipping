@@ -112,7 +112,9 @@
   "d_sale_cost",
   "d_profit_loss",
   "d_percent_profit",
-  "st_ino_description"
+  "st_ino_description",
+  "booking_number",
+  "booking_number_detail"
  ],
  "fields": [
   {
@@ -679,10 +681,22 @@
    "in_standard_filter": 1,
    "label": "Vehicle Current State",
    "options": "Vehicle Status"
+  },
+  {
+   "fieldname": "booking_number",
+   "fieldtype": "Link",
+   "label": "Booking Number",
+   "options": "View Shippment"
+  },
+  {
+   "fetch_from": "booking_number.d_booking_number",
+   "fieldname": "booking_number_detail",
+   "fieldtype": "Data",
+   "label": "Booking Number Detail"
   }
  ],
  "hide_toolbar": 1,
- "modified": "2021-04-19 01:25:37.581383",
+ "modified": "2021-04-19 23:46:32.354681",
  "modified_by": "Administrator",
  "module": "Manage Vehicle Shipping",
  "name": "Add New Vehicle",
