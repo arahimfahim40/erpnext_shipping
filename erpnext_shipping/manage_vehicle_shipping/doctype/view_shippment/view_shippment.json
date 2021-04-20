@@ -1,0 +1,524 @@
+{
+ "allow_import": 1,
+ "autoname": "VS.#####",
+ "creation": "2021-04-19 05:32:19.486712",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb_export_info",
+  "lnk_creating_by",
+  "d_booking_number",
+  "d_aes_it_no",
+  "d_container_no",
+  "d_bill_lading_no",
+  "d_pgl_ref_no",
+  "d_seal_no",
+  "d_pin_out",
+  "d_pin_in",
+  "d_container_size",
+  "dt_cutoff",
+  "dt_loading",
+  "d_port_loading",
+  "d_etd_port_discharge",
+  "d_vessel_name",
+  "d_voyage_no",
+  "d_flag",
+  "d_steamship",
+  "d_actions",
+  "cb_vs_01",
+  "dt_creating_date",
+  "d_place_rec",
+  "d_pier",
+  "lnk_loading_port",
+  "d_loading_terminal",
+  "d_port_discharge",
+  "d_release_date",
+  "d_poc_cargo",
+  "d_origin_country",
+  "d_scac_code",
+  "d_transportation_cost",
+  "d_broker_name",
+  "d_precarriage",
+  "d_place_recpt",
+  "vp_img",
+  "sm_photolink",
+  "attached_doc",
+  "sb_shipping_doc_info",
+  "d_shipper_exporter",
+  "d_shipper_address",
+  "d_shipper_city",
+  "d_shipper_state",
+  "d_shipper_zipcode",
+  "d_shipper_email",
+  "d_shipper_phone",
+  "d_shipper_fax",
+  "d_shipper_poc",
+  "d_forwarding_agent",
+  "d_forwarding_agent_street",
+  "ch_reserve_container",
+  "vs_cb_002",
+  "d_for_agent_city",
+  "d_for_agent_state",
+  "d_for_agent_zipcode",
+  "d_for_agent_email",
+  "d_for_agent_phone",
+  "forwarding_agent_fax_number",
+  "d_for_agent_poc",
+  "measurement",
+  "numberdescription_of_units_loaded",
+  "lnk_company_list",
+  "invoice_number",
+  "amount",
+  "vs_sb_003",
+  "te_reference",
+  "vs_sb_004",
+  "te_basic_instruction"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "sb_export_info",
+   "fieldtype": "Section Break",
+   "label": "Export Information"
+  },
+  {
+   "fetch_from": "frappe.session.user",
+   "fieldname": "lnk_creating_by",
+   "fieldtype": "Data",
+   "label": "Creating By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "d_booking_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Booking Number",
+   "reqd": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "dt_creating_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Creating Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "d_aes_it_no",
+   "fieldtype": "Data",
+   "label": "AES ITN Number"
+  },
+  {
+   "fieldname": "d_container_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": " Container Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_bill_lading_no",
+   "fieldtype": "Data",
+   "label": "Bill of Lading Number"
+  },
+  {
+   "fieldname": "d_pgl_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "PGL Reference Number"
+  },
+  {
+   "fieldname": "d_seal_no",
+   "fieldtype": "Data",
+   "label": "Seal Number"
+  },
+  {
+   "fieldname": "d_pin_out",
+   "fieldtype": "Data",
+   "label": "Pin Out"
+  },
+  {
+   "fieldname": "d_pin_in",
+   "fieldtype": "Data",
+   "label": "Pin In"
+  },
+  {
+   "fieldname": "d_container_size",
+   "fieldtype": "Data",
+   "label": "Container Size/Type"
+  },
+  {
+   "fieldname": "dt_cutoff",
+   "fieldtype": "Date",
+   "label": "Cut Off Date"
+  },
+  {
+   "fieldname": "dt_loading",
+   "fieldtype": "Date",
+   "label": "Loading Date"
+  },
+  {
+   "fieldname": "d_port_loading",
+   "fieldtype": "Date",
+   "label": "ETD at Port of Loading"
+  },
+  {
+   "fieldname": "d_etd_port_discharge",
+   "fieldtype": "Date",
+   "label": "ETA at Port of Discharge"
+  },
+  {
+   "fieldname": "d_vessel_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Vessel Name"
+  },
+  {
+   "fieldname": "d_voyage_no",
+   "fieldtype": "Data",
+   "label": "Voyage Number"
+  },
+  {
+   "fieldname": "d_flag",
+   "fieldtype": "Data",
+   "label": "Flag"
+  },
+  {
+   "fieldname": "d_steamship",
+   "fieldtype": "Data",
+   "label": "Steamship Line"
+  },
+  {
+   "fieldname": "d_actions",
+   "fieldtype": "Data",
+   "label": "Actions"
+  },
+  {
+   "fieldname": "cb_vs_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_place_rec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Place of Receipt"
+  },
+  {
+   "fieldname": "d_pier",
+   "fieldtype": "Data",
+   "label": "PIER"
+  },
+  {
+   "fieldname": "lnk_loading_port",
+   "fieldtype": "Link",
+   "label": "Port of loading ",
+   "options": "Load Locations"
+  },
+  {
+   "fieldname": "d_loading_terminal",
+   "fieldtype": "Data",
+   "label": "Loading Terminal"
+  },
+  {
+   "fieldname": "d_port_discharge",
+   "fieldtype": "Data",
+   "label": "Port of Discharge"
+  },
+  {
+   "fieldname": "d_release_date",
+   "fieldtype": "Date",
+   "label": "Release Date"
+  },
+  {
+   "fieldname": "d_poc_cargo",
+   "fieldtype": "Data",
+   "label": "POC for Cargo Release"
+  },
+  {
+   "fieldname": "d_origin_country",
+   "fieldtype": "Data",
+   "label": "Country of Origin"
+  },
+  {
+   "fieldname": "d_scac_code",
+   "fieldtype": "Data",
+   "label": "SCAC Code"
+  },
+  {
+   "fieldname": "d_transportation_cost",
+   "fieldtype": "Data",
+   "label": "Transportation Cost"
+  },
+  {
+   "fieldname": "d_broker_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Broker Name"
+  },
+  {
+   "fieldname": "d_precarriage",
+   "fieldtype": "Data",
+   "label": "Pre-Carriage By"
+  },
+  {
+   "fieldname": "d_place_recpt",
+   "fieldtype": "Data",
+   "label": "Place of Receipt by Pre Carrier"
+  },
+  {
+   "fieldname": "vp_img",
+   "fieldtype": "Attach Image",
+   "label": "Choose Photo"
+  },
+  {
+   "fieldname": "sm_photolink",
+   "fieldtype": "Small Text",
+   "label": "Photo Link"
+  },
+  {
+   "fieldname": "attached_doc",
+   "fieldtype": "Attach",
+   "label": "Add Validated/Signed Documents"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_shipping_doc_info",
+   "fieldtype": "Section Break",
+   "label": "Shipping Document information"
+  },
+  {
+   "default": "Peace Global Logistics",
+   "fieldname": "d_shipper_exporter",
+   "fieldtype": "Data",
+   "label": "Shipper/Exporter"
+  },
+  {
+   "default": "2824 Tremont Road",
+   "fieldname": "d_shipper_address",
+   "fieldtype": "Data",
+   "label": "Shipper/Exporter Street Address"
+  },
+  {
+   "default": "Savannah",
+   "fieldname": "d_shipper_city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shipper/Exporter City"
+  },
+  {
+   "default": "GA",
+   "fieldname": "d_shipper_state",
+   "fieldtype": "Data",
+   "label": "Shipper/Exporter State"
+  },
+  {
+   "default": "31405",
+   "fieldname": "d_shipper_zipcode",
+   "fieldtype": "Data",
+   "label": "Shipper/Exporter Zip Code"
+  },
+  {
+   "default": "docs@peacegl.com",
+   "fieldname": "d_shipper_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shipper/Exporter Email Address"
+  },
+  {
+   "default": "571-699-9855",
+   "fieldname": "d_shipper_phone",
+   "fieldtype": "Data",
+   "label": "Shipper/Exporter Phone Number"
+  },
+  {
+   "fieldname": "d_shipper_fax",
+   "fieldtype": "Data",
+   "label": "Shipper/Exporter Fax Number"
+  },
+  {
+   "default": "Abdul Hamid Tamim",
+   "fieldname": "d_shipper_poc",
+   "fieldtype": "Data",
+   "label": "Shipper/Exporter POC"
+  },
+  {
+   "default": "Peace Global Logistics",
+   "fieldname": "d_forwarding_agent",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent"
+  },
+  {
+   "default": "2824 Tremont Road",
+   "fieldname": "d_forwarding_agent_street",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent Street Address"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_reserve_container",
+   "fieldtype": "Check",
+   "label": " Reserve Container"
+  },
+  {
+   "fieldname": "vs_cb_002",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Savannah",
+   "fieldname": "d_for_agent_city",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent City"
+  },
+  {
+   "default": "GA",
+   "fieldname": "d_for_agent_state",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent State"
+  },
+  {
+   "default": "31405",
+   "fieldname": "d_for_agent_zipcode",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent Zip Code"
+  },
+  {
+   "default": "docs@peacegl.com",
+   "fieldname": "d_for_agent_email",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent Email Address"
+  },
+  {
+   "default": "571-699-9855",
+   "fieldname": "d_for_agent_phone",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent Phone Number"
+  },
+  {
+   "fieldname": "forwarding_agent_fax_number",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent Fax Number"
+  },
+  {
+   "default": "Abdul Hamid Tamim",
+   "fieldname": "d_for_agent_poc",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent POC"
+  },
+  {
+   "fieldname": "measurement",
+   "fieldtype": "Data",
+   "label": "Measurement"
+  },
+  {
+   "fieldname": "numberdescription_of_units_loaded",
+   "fieldtype": "Data",
+   "label": "Number/Description of Units Loaded"
+  },
+  {
+   "default": "Abdul Satar Abdul Ghafar Used Cars and spare parts TR.",
+   "fieldname": "lnk_company_list",
+   "fieldtype": "Link",
+   "label": "Select Company ",
+   "options": "User Company List"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "vs_sb_003",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "te_reference",
+   "fieldtype": "Text Editor",
+   "label": "Export References and Instructions"
+  },
+  {
+   "fieldname": "vs_sb_004",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "te_basic_instruction",
+   "fieldtype": "Text Editor",
+   "label": "Basic Instruction"
+  }
+ ],
+ "hide_toolbar": 1,
+ "modified": "2021-04-19 20:27:05.826017",
+ "modified_by": "Administrator",
+ "module": "Manage Vehicle Shipping",
+ "name": "View Shippment",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,137 @@
+{
+ "allow_copy": 1,
+ "allow_import": 1,
+ "autoname": "VTR.####",
+ "creation": "2021-04-19 03:41:08.652501",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "d_tow_state",
+  "d_tow_branch",
+  "d_tow_city",
+  "cb_0009",
+  "d_tow_cost",
+  "d_tow_changedate",
+  "d_tow_newcost",
+  "section_break_8",
+  "d_tow_note"
+ ],
+ "fields": [
+  {
+   "fieldname": "d_tow_state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "State"
+  },
+  {
+   "fieldname": "d_tow_branch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch/Location"
+  },
+  {
+   "fieldname": "d_tow_city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "cb_0009",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_tow_cost",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Towing cost"
+  },
+  {
+   "fieldname": "d_tow_changedate",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Change date",
+   "search_index": 1
+  },
+  {
+   "fieldname": "d_tow_newcost",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "New cost"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d_tow_note",
+   "fieldtype": "Long Text",
+   "label": "Note"
+  }
+ ],
+ "hide_toolbar": 1,
+ "modified": "2021-04-19 03:41:08.652501",
+ "modified_by": "Administrator",
+ "module": "Manage Vehicle Shipping",
+ "name": "View Towing Rate",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

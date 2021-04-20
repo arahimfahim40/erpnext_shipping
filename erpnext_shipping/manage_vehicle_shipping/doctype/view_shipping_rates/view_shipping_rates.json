@@ -1,0 +1,137 @@
+{
+ "allow_import": 1,
+ "autoname": "VSR.#####",
+ "creation": "2021-04-19 07:10:15.526069",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "d_frm_port",
+  "d_to_port",
+  "d_cargo",
+  "cb_000",
+  "d_old_price",
+  "dt_chnage_date",
+  "d_new_price",
+  "sb_note",
+  "d_note"
+ ],
+ "fields": [
+  {
+   "fieldname": "d_frm_port",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From port"
+  },
+  {
+   "fieldname": "d_to_port",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "To port"
+  },
+  {
+   "fieldname": "d_cargo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cargo"
+  },
+  {
+   "fieldname": "cb_000",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_old_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Old price"
+  },
+  {
+   "fieldname": "dt_chnage_date",
+   "fieldtype": "Date",
+   "label": "Change date"
+  },
+  {
+   "fieldname": "d_new_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "New price"
+  },
+  {
+   "fieldname": "sb_note",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d_note",
+   "fieldtype": "Text Editor",
+   "label": "Note"
+  }
+ ],
+ "hide_toolbar": 1,
+ "modified": "2021-04-19 07:14:21.715761",
+ "modified_by": "Administrator",
+ "module": "Manage Vehicle Shipping",
+ "name": "View shipping Rates",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

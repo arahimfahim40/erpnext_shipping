@@ -1,0 +1,153 @@
+{
+ "allow_import": 1,
+ "autoname": "Invoice.######",
+ "creation": "2021-04-19 07:20:05.675488",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_number",
+  "invoice_date",
+  "d_purpose",
+  "dt_invo_due_date",
+  "lnk_company_name",
+  "cb_vi_001",
+  "lnk_container",
+  "d_inovice_amount",
+  "d_payment_recvd",
+  "dt_recvd",
+  "d_payment_method",
+  "section_break_12",
+  "te_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Invoice Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_purpose",
+   "fieldtype": "Data",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "dt_invo_due_date",
+   "fieldtype": "Date",
+   "label": "Invoice Due Date"
+  },
+  {
+   "fieldname": "lnk_company_name",
+   "fieldtype": "Link",
+   "label": "Select Company ",
+   "options": "User Company List"
+  },
+  {
+   "fieldname": "cb_vi_001",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lnk_container",
+   "fieldtype": "Data",
+   "label": "Select Container "
+  },
+  {
+   "fieldname": "d_inovice_amount",
+   "fieldtype": "Data",
+   "label": "Invoice Amount"
+  },
+  {
+   "fieldname": "d_payment_recvd",
+   "fieldtype": "Data",
+   "label": "Payment Received"
+  },
+  {
+   "fieldname": "dt_recvd",
+   "fieldtype": "Date",
+   "label": "Received Date"
+  },
+  {
+   "fieldname": "d_payment_method",
+   "fieldtype": "Data",
+   "label": "Method of Payment"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "te_description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "hide_toolbar": 1,
+ "modified": "2021-04-19 07:54:33.877832",
+ "modified_by": "Administrator",
+ "module": "Manage Vehicle Shipping",
+ "name": "View Invoices",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

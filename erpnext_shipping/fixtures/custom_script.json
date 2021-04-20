@@ -1,0 +1,24 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Add New Vehicle",
+  "modified": "2021-04-19 10:41:35.491556",
+  "name": "Add New Vehicle-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Add New Vehicle', {\n\trefresh(frm) {\n\t\t// your code here\n\t\tfrm.set_value(\"d_reported_by\",frappe.session.user_fullname);\n\t}\n});\n\n// calculation total vehicle cost by adding all fields\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_vehicle_aution_price\", function(frm) {\n  frm.set_value(\"d_total_cost_veh\", flt(frm.doc.d_vehicle_aution_price) + flt(frm.doc.d_tow_amount_s5) + flt(frm.doc.d_dismantal_cost) + flt(frm.doc.d_shipping_cost)+flt(frm.doc.d_storage_pol_origin) + flt(frm.doc.d_storage_pod) + flt(frm.doc.d_custom_cost) + flt(frm.doc.d_other_cost));\n});\n// on change of tow amount\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_tow_amount_s5\", function(frm) {\n frm.set_value(\"d_total_cost_veh\", flt(frm.doc.d_vehicle_aution_price) + flt(frm.doc.d_tow_amount_s5) + flt(frm.doc.d_dismantal_cost) + flt(frm.doc.d_shipping_cost)+flt(frm.doc.d_storage_pol_origin) + flt(frm.doc.d_storage_pod) + flt(frm.doc.d_custom_cost) + flt(frm.doc.d_other_cost));\n\n});\n// on change of dimantal cost\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_dismantal_cost\", function(frm) {\n frm.set_value(\"d_total_cost_veh\", flt(frm.doc.d_vehicle_aution_price) + flt(frm.doc.d_tow_amount_s5) + flt(frm.doc.d_dismantal_cost) + flt(frm.doc.d_shipping_cost)+flt(frm.doc.d_storage_pol_origin) + flt(frm.doc.d_storage_pod) + flt(frm.doc.d_custom_cost) + flt(frm.doc.d_other_cost));\n});\n\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_shipping_cost\", function(frm) {\n frm.set_value(\"d_total_cost_veh\", flt(frm.doc.d_vehicle_aution_price) + flt(frm.doc.d_tow_amount_s5) + flt(frm.doc.d_dismantal_cost) + flt(frm.doc.d_shipping_cost)+flt(frm.doc.d_storage_pol_origin) + flt(frm.doc.d_storage_pod) + flt(frm.doc.d_custom_cost) + flt(frm.doc.d_other_cost));\n});\n\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_storage_pol_origin\", function(frm) {\n frm.set_value(\"d_total_cost_veh\", flt(frm.doc.d_vehicle_aution_price) + flt(frm.doc.d_tow_amount_s5) + flt(frm.doc.d_dismantal_cost) + flt(frm.doc.d_shipping_cost)+flt(frm.doc.d_storage_pol_origin) + flt(frm.doc.d_storage_pod) + flt(frm.doc.d_custom_cost) + flt(frm.doc.d_other_cost));\n});\n\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_storage_pod\", function(frm) {\n frm.set_value(\"d_total_cost_veh\", flt(frm.doc.d_vehicle_aution_price) + flt(frm.doc.d_tow_amount_s5) + flt(frm.doc.d_dismantal_cost) + flt(frm.doc.d_shipping_cost)+flt(frm.doc.d_storage_pol_origin) + flt(frm.doc.d_storage_pod) + flt(frm.doc.d_custom_cost) + flt(frm.doc.d_other_cost));\n});\n\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_custom_cost\", function(frm) {\n frm.set_value(\"d_total_cost_veh\", flt(frm.doc.d_vehicle_aution_price) + flt(frm.doc.d_tow_amount_s5) + flt(frm.doc.d_dismantal_cost) + flt(frm.doc.d_shipping_cost)+flt(frm.doc.d_storage_pol_origin) + flt(frm.doc.d_storage_pod) + flt(frm.doc.d_custom_cost) + flt(frm.doc.d_other_cost));\n});\n\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_other_cost\", function(frm) {\n frm.set_value(\"d_total_cost_veh\", flt(frm.doc.d_vehicle_aution_price) + flt(frm.doc.d_tow_amount_s5) + flt(frm.doc.d_dismantal_cost) + flt(frm.doc.d_shipping_cost)+flt(frm.doc.d_storage_pol_origin) + flt(frm.doc.d_storage_pod) + flt(frm.doc.d_custom_cost) + flt(frm.doc.d_other_cost));\n});\n\n\n// Profit/lost = Selling Price (SP) \u2013Total Cost Price (CP)\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_sale_cost\", function(frm) {\n frm.set_value(\"d_profit_loss\", flt(frm.doc.d_sale_cost) - flt(frm.doc.d_total_cost_veh));\n});\n\n//Percentage Profit= (profit *100)/Total Cost Price (CP)\nfrappe.ui.form.on(\"Add New Vehicle\", \"d_sale_cost\", function(frm) {\n frm.set_value(\"d_percent_profit\", flt(frm.doc.d_profit_loss)* flt(100) / flt(frm.doc.d_total_cost_veh));\n});\n\n"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "View Shippment",
+  "modified": "2021-04-19 20:26:05.439045",
+  "name": "View Shippment-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('View Shippment', {\n\trefresh(frm) {\n\t\tfrm.set_value(\"lnk_creating_by\",frappe.session.user_fullname);\n\t}\n})\n\n\n"
+ }
+]

@@ -1,0 +1,732 @@
+{
+ "allow_import": 1,
+ "autoname": "VEH.#####",
+ "creation": "2021-04-18 14:40:05.037136",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb_info",
+  "lk_user_company",
+  "lnk_customer_name",
+  "d_vin",
+  "d_year",
+  "d_make",
+  "d_model",
+  "d_color",
+  "d_vehicle_price",
+  "d_lot_number",
+  "dt_purchase_date",
+  "dt_payment_date",
+  "dt_pickup_due_date",
+  "te_enter_note",
+  "c_cb1",
+  "d_report_date_pgl",
+  "d_reported_by",
+  "no_days_pfp",
+  "no_days_pfr",
+  "d_auction",
+  "d_auction_city",
+  "s_ship_as",
+  "lnk_point_loading",
+  "d_destination_port",
+  "d_buyer_number",
+  "d_auction_invoice",
+  "vehicle_current_status",
+  "sb_veh_info",
+  "dt_pd",
+  "d_description",
+  "d_hat_number",
+  "st_customer_remarks",
+  "d_title_status",
+  "sl_towed",
+  "sl_towed_by",
+  "dt_pcd",
+  "d_pcd",
+  "dt_towing_request_date",
+  "dt_delivery_date",
+  "d_towed_from",
+  "c_cb2",
+  "d_towing_company",
+  "d_tow_amount",
+  "d_check_no",
+  "st_title",
+  "d_title_number",
+  "d_title_state",
+  "d_title_recv",
+  "d_weight",
+  "d_license_plate",
+  "sb_03",
+  "ch_keys",
+  "ch_radio",
+  "ch_cassettes",
+  "ch_cd_player",
+  "ch_cd_changer",
+  "ch_floor_mat",
+  "ch_gps_navigation_system",
+  "cb_003",
+  "ch_mirror",
+  "ch_spare",
+  "ch_speaker",
+  "ch_wheel_cover",
+  "ch_other",
+  "sb_04",
+  "text_box_1",
+  "text_box_2",
+  "text_box_3",
+  "text_box_4",
+  "text_box_5",
+  "text_box_6",
+  "text_box_7",
+  "text_box_8",
+  "text_box_9",
+  "text_box_10",
+  "text_box_11",
+  "text_box_12",
+  "cb_05",
+  "text_box_13",
+  "text_box_14",
+  "text_box_15",
+  "text_box_16",
+  "text_box_17",
+  "text_box_18",
+  "text_box_19",
+  "text_box_20",
+  "text_box_21",
+  "sl_key_present",
+  "ai_photo_01",
+  "st_photo_link",
+  "sb_cost_information",
+  "d_vehicle_aution_price",
+  "d_tow_amount_s5",
+  "d_dismantal_cost",
+  "d_shipping_cost",
+  "d_storage_pol_origin",
+  "d_storage_pod",
+  "d_custom_cost",
+  "lt_additional_info",
+  "cb_06",
+  "d_other_cost",
+  "d_total_cost_veh",
+  "d_sale_cost",
+  "d_profit_loss",
+  "d_percent_profit",
+  "st_ino_description"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "sb_info",
+   "fieldtype": "Section Break",
+   "label": "Assigning Customer + General Information",
+   "options": "fa fa-file-text"
+  },
+  {
+   "fieldname": "lk_user_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Company",
+   "options": "User Company List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lnk_customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "d_year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "d_make",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Make"
+  },
+  {
+   "fieldname": "d_model",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Model"
+  },
+  {
+   "fieldname": "d_color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "d_vehicle_price",
+   "fieldtype": "Data",
+   "label": "Vehicle price"
+  },
+  {
+   "fieldname": "d_lot_number",
+   "fieldtype": "Data",
+   "label": "Lot number"
+  },
+  {
+   "fieldname": "dt_purchase_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Purchase date"
+  },
+  {
+   "fieldname": "dt_payment_date",
+   "fieldtype": "Date",
+   "label": "Payment date"
+  },
+  {
+   "fieldname": "dt_pickup_due_date",
+   "fieldtype": "Data",
+   "label": "Pickup due date"
+  },
+  {
+   "fieldname": "te_enter_note",
+   "fieldtype": "Long Text",
+   "label": "Enter note"
+  },
+  {
+   "fieldname": "d_reported_by",
+   "fieldtype": "Data",
+   "label": "Reported by",
+   "options": "User"
+  },
+  {
+   "fieldname": "no_days_pfp",
+   "fieldtype": "Data",
+   "label": "Numbers of days pickup from purchase"
+  },
+  {
+   "fieldname": "no_days_pfr",
+   "fieldtype": "Data",
+   "label": "Numbers of days pickup from reported"
+  },
+  {
+   "fieldname": "d_auction",
+   "fieldtype": "Data",
+   "label": "Auction"
+  },
+  {
+   "default": "Whole Car",
+   "fieldname": "s_ship_as",
+   "fieldtype": "Select",
+   "label": "Ship as ",
+   "options": "Whole Car\nDismantle"
+  },
+  {
+   "fieldname": "lnk_point_loading",
+   "fieldtype": "Link",
+   "label": "Point of loading",
+   "options": "Load Locations"
+  },
+  {
+   "fieldname": "d_destination_port",
+   "fieldtype": "Data",
+   "label": "Destination Port"
+  },
+  {
+   "fieldname": "d_buyer_number",
+   "fieldtype": "Data",
+   "label": "Buyer Number"
+  },
+  {
+   "fieldname": "d_auction_invoice",
+   "fieldtype": "Attach",
+   "label": "Auction Invoice"
+  },
+  {
+   "fieldname": "c_cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_report_date_pgl",
+   "fieldtype": "Datetime",
+   "label": "Report Date To PGL"
+  },
+  {
+   "fieldname": "d_auction_city",
+   "fieldtype": "Data",
+   "label": "Auction City"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_veh_info",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Information",
+   "options": "fa fa-file-text"
+  },
+  {
+   "fieldname": "dt_pd",
+   "fieldtype": "Date",
+   "label": "Pickup Date"
+  },
+  {
+   "fieldname": "d_description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "d_hat_number",
+   "fieldtype": "Data",
+   "label": "Hat Number"
+  },
+  {
+   "fieldname": "st_customer_remarks",
+   "fieldtype": "Small Text",
+   "label": "Customer Remarks"
+  },
+  {
+   "fieldname": "d_title_status",
+   "fieldtype": "Data",
+   "label": "Title Status"
+  },
+  {
+   "fieldname": "sl_towed",
+   "fieldtype": "Select",
+   "label": "Towed",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "PGL",
+   "fieldname": "sl_towed_by",
+   "fieldtype": "Select",
+   "label": "Towed By",
+   "options": "PGL\nCustomer"
+  },
+  {
+   "fieldname": "dt_pcd",
+   "fieldtype": "Date",
+   "label": "Date Posted In Central Dispatch"
+  },
+  {
+   "fieldname": "d_pcd",
+   "fieldtype": "Data",
+   "label": "Posted By In Central Dispatch"
+  },
+  {
+   "fieldname": "dt_towing_request_date",
+   "fieldtype": "Date",
+   "label": "Towing Request Date"
+  },
+  {
+   "fieldname": "dt_delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "d_towed_from",
+   "fieldtype": "Data",
+   "label": "Towed From"
+  },
+  {
+   "fieldname": "c_cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_towing_company",
+   "fieldtype": "Data",
+   "label": "Towing Company"
+  },
+  {
+   "fieldname": "d_tow_amount",
+   "fieldtype": "Data",
+   "label": "Tow Amount"
+  },
+  {
+   "fieldname": "d_check_no",
+   "fieldtype": "Data",
+   "label": "Check No.-Issued to Tow"
+  },
+  {
+   "fieldname": "st_title",
+   "fieldtype": "Select",
+   "label": "Title",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "d_title_number",
+   "fieldtype": "Data",
+   "label": "Title Number"
+  },
+  {
+   "fieldname": "d_title_state",
+   "fieldtype": "Data",
+   "label": "Title State"
+  },
+  {
+   "fieldname": "d_title_recv",
+   "fieldtype": "Date",
+   "label": "Title Receive Date"
+  },
+  {
+   "fieldname": "d_weight",
+   "fieldtype": "Data",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "d_license_plate",
+   "fieldtype": "Data",
+   "label": "License plate/Tag Number"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_03",
+   "fieldtype": "Section Break",
+   "label": "Check Options Included On the Vehicles"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_keys",
+   "fieldtype": "Check",
+   "label": "Keys"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_radio",
+   "fieldtype": "Check",
+   "label": "Radio"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_cassettes",
+   "fieldtype": "Check",
+   "label": "Cassettes"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_cd_player",
+   "fieldtype": "Check",
+   "label": "CD Player"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_cd_changer",
+   "fieldtype": "Check",
+   "label": "CD Changer"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_floor_mat",
+   "fieldtype": "Check",
+   "label": "Floor Mat"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_gps_navigation_system",
+   "fieldtype": "Check",
+   "label": "GPS Navigation System"
+  },
+  {
+   "fieldname": "cb_003",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_mirror",
+   "fieldtype": "Check",
+   "label": "Mirror"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_spare",
+   "fieldtype": "Check",
+   "label": "Spare Tire/ Jack"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_speaker",
+   "fieldtype": "Check",
+   "label": "Speaker"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_wheel_cover",
+   "fieldtype": "Check",
+   "label": "Wheel Cover"
+  },
+  {
+   "default": "0",
+   "fieldname": "ch_other",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_04",
+   "fieldtype": "Section Break",
+   "label": "Condition Of Vehicles"
+  },
+  {
+   "fieldname": "text_box_1",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 1"
+  },
+  {
+   "fieldname": "text_box_2",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 2"
+  },
+  {
+   "fieldname": "text_box_3",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 3"
+  },
+  {
+   "fieldname": "text_box_4",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 4"
+  },
+  {
+   "fieldname": "text_box_5",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 5"
+  },
+  {
+   "fieldname": "text_box_6",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 6"
+  },
+  {
+   "fieldname": "text_box_7",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 7"
+  },
+  {
+   "fieldname": "text_box_8",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 8"
+  },
+  {
+   "fieldname": "text_box_9",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 9"
+  },
+  {
+   "fieldname": "text_box_10",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 10"
+  },
+  {
+   "fieldname": "text_box_11",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 11"
+  },
+  {
+   "fieldname": "text_box_12",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 12"
+  },
+  {
+   "fieldname": "cb_05",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "text_box_13",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 13"
+  },
+  {
+   "fieldname": "text_box_14",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 14"
+  },
+  {
+   "fieldname": "text_box_15",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 15"
+  },
+  {
+   "fieldname": "text_box_16",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 16"
+  },
+  {
+   "fieldname": "text_box_17",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 17"
+  },
+  {
+   "fieldname": "text_box_18",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 18"
+  },
+  {
+   "fieldname": "text_box_19",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 19"
+  },
+  {
+   "fieldname": "text_box_20",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 20"
+  },
+  {
+   "fieldname": "text_box_21",
+   "fieldtype": "Data",
+   "label": "TEXT BOX 21"
+  },
+  {
+   "fieldname": "sl_key_present",
+   "fieldtype": "Select",
+   "label": "Key Present?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "ai_photo_01",
+   "fieldtype": "Attach Image",
+   "label": "Choose Photos"
+  },
+  {
+   "fieldname": "st_photo_link",
+   "fieldtype": "Small Text",
+   "label": "Photos Link"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_cost_information",
+   "fieldtype": "Section Break",
+   "label": "Cost Information"
+  },
+  {
+   "fieldname": "d_vehicle_aution_price",
+   "fieldtype": "Data",
+   "label": "Vehicle Price and Auction Fee"
+  },
+  {
+   "fieldname": "d_tow_amount_s5",
+   "fieldtype": "Data",
+   "label": "Tow Amount"
+  },
+  {
+   "fieldname": "d_dismantal_cost",
+   "fieldtype": "Data",
+   "label": "Dismantal Cost"
+  },
+  {
+   "fieldname": "d_shipping_cost",
+   "fieldtype": "Data",
+   "label": "Shipping Cost"
+  },
+  {
+   "fieldname": "d_storage_pol_origin",
+   "fieldtype": "Data",
+   "label": "Storage at POL Origin"
+  },
+  {
+   "fieldname": "d_storage_pod",
+   "fieldtype": "Int",
+   "label": "Storage at POD"
+  },
+  {
+   "fieldname": "d_custom_cost",
+   "fieldtype": "Data",
+   "label": "Custom Cost"
+  },
+  {
+   "fieldname": "lt_additional_info",
+   "fieldtype": "Long Text",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "cb_06",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_other_cost",
+   "fieldtype": "Data",
+   "label": "Other Cost"
+  },
+  {
+   "fieldname": "d_total_cost_veh",
+   "fieldtype": "Data",
+   "label": "Total Cost Of Vehcile"
+  },
+  {
+   "fieldname": "d_sale_cost",
+   "fieldtype": "Data",
+   "label": "Sales Cost"
+  },
+  {
+   "fieldname": "d_profit_loss",
+   "fieldtype": "Data",
+   "label": "Profit / loss"
+  },
+  {
+   "fieldname": "d_percent_profit",
+   "fieldtype": "Data",
+   "label": "Percent Profit"
+  },
+  {
+   "fieldname": "st_ino_description",
+   "fieldtype": "Small Text",
+   "label": "Invoice Description"
+  },
+  {
+   "default": "On The Way",
+   "fieldname": "vehicle_current_status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle Current State",
+   "options": "Vehicle Status"
+  }
+ ],
+ "hide_toolbar": 1,
+ "modified": "2021-04-19 01:25:37.581383",
+ "modified_by": "Administrator",
+ "module": "Manage Vehicle Shipping",
+ "name": "Add New Vehicle",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

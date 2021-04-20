@@ -1,0 +1,331 @@
+{
+ "allow_import": 1,
+ "autoname": "CUS.#####",
+ "creation": "2021-04-18 09:19:29.735055",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "d_cus_id",
+  "d_company_poc_name",
+  "user_company_list",
+  "d_company_street_address",
+  "d_company_city",
+  "d_company_zip_code",
+  "d_company_country",
+  "d_cus_email",
+  "d_secondary_email",
+  "d_phone",
+  "d_secondary_phone",
+  "d_means_of_contact",
+  "d_since_date",
+  "d_gender",
+  "d_chose_photo",
+  "d_about",
+  "d_note",
+  "d_select_status",
+  "d_column_brk01",
+  "d_consignee",
+  "d_consignee_street_address",
+  "d_consignee_po_box",
+  "d_consignee_city",
+  "d_consignee_zip",
+  "d_consignee_country",
+  "d_consignee_phone",
+  "d_consignee_email",
+  "d_consignee_fax_number",
+  "d_consignee_poc",
+  "d_notify_party",
+  "d_notify_party_street_address",
+  "d_notify_party_po_box",
+  "d_notify_party_city",
+  "d_notify_party_state",
+  "d_notify_party_zip",
+  "d_notify_party_country",
+  "d_notify_party_phone",
+  "d_notify_party_email",
+  "d_notify_party_fax_number",
+  "d_notify_party_poc"
+ ],
+ "fields": [
+  {
+   "fieldname": "d_cus_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "d_company_poc_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company POC Name",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "user_company_list",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Select Company",
+   "options": "User Company List",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "d_company_street_address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Company Street Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_company_city",
+   "fieldtype": "Data",
+   "label": "Company City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_company_zip_code",
+   "fieldtype": "Data",
+   "label": "Company Zip Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_company_country",
+   "fieldtype": "Data",
+   "label": "Company Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_cus_email",
+   "fieldtype": "Data",
+   "label": "Customer Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "d_secondary_email",
+   "fieldtype": "Data",
+   "label": "Secondary Email"
+  },
+  {
+   "fieldname": "d_phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "d_secondary_phone",
+   "fieldtype": "Data",
+   "label": "Secondary Phone"
+  },
+  {
+   "fieldname": "d_means_of_contact",
+   "fieldtype": "Data",
+   "label": "Means of Contact"
+  },
+  {
+   "fieldname": "d_since_date",
+   "fieldtype": "Date",
+   "label": "Since Date"
+  },
+  {
+   "fieldname": "d_gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "Male\nFemale",
+   "search_index": 1
+  },
+  {
+   "fieldname": "d_chose_photo",
+   "fieldtype": "Attach Image",
+   "label": "Chose Photo"
+  },
+  {
+   "fieldname": "d_about",
+   "fieldtype": "Small Text",
+   "label": "About"
+  },
+  {
+   "fieldname": "d_note",
+   "fieldtype": "Data",
+   "label": "Note"
+  },
+  {
+   "default": "Active",
+   "fieldname": "d_select_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Select Status",
+   "options": "De Active\nActive",
+   "search_index": 1
+  },
+  {
+   "fieldname": "d_column_brk01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_consignee",
+   "fieldtype": "Data",
+   "label": "Consignee"
+  },
+  {
+   "fieldname": "d_consignee_street_address",
+   "fieldtype": "Data",
+   "label": "Consignee Street Address"
+  },
+  {
+   "fieldname": "d_consignee_po_box",
+   "fieldtype": "Data",
+   "label": "Consignee PO. BOX"
+  },
+  {
+   "fieldname": "d_consignee_city",
+   "fieldtype": "Data",
+   "label": "Consignee City"
+  },
+  {
+   "fieldname": "d_consignee_zip",
+   "fieldtype": "Data",
+   "label": "Consignee Zip"
+  },
+  {
+   "fieldname": "d_consignee_country",
+   "fieldtype": "Data",
+   "label": "Consignee Country"
+  },
+  {
+   "fieldname": "d_consignee_phone",
+   "fieldtype": "Data",
+   "label": "Consignee phone"
+  },
+  {
+   "fieldname": "d_consignee_email",
+   "fieldtype": "Data",
+   "label": "Consignee Email"
+  },
+  {
+   "fieldname": "d_consignee_fax_number",
+   "fieldtype": "Data",
+   "label": "Consignee Fax Number"
+  },
+  {
+   "fieldname": "d_consignee_poc",
+   "fieldtype": "Data",
+   "label": "Consignee POC"
+  },
+  {
+   "fieldname": "d_notify_party",
+   "fieldtype": "Data",
+   "label": "Notify Party"
+  },
+  {
+   "fieldname": "d_notify_party_street_address",
+   "fieldtype": "Data",
+   "label": "Notify Party Street Address"
+  },
+  {
+   "fieldname": "d_notify_party_po_box",
+   "fieldtype": "Data",
+   "label": "Notify Party PO. BOX"
+  },
+  {
+   "fieldname": "d_notify_party_city",
+   "fieldtype": "Data",
+   "label": "Notify Party City"
+  },
+  {
+   "fieldname": "d_notify_party_state",
+   "fieldtype": "Data",
+   "label": "Notify Party state"
+  },
+  {
+   "fieldname": "d_notify_party_zip",
+   "fieldtype": "Data",
+   "label": "Notify Party Zip"
+  },
+  {
+   "fieldname": "d_notify_party_country",
+   "fieldtype": "Data",
+   "label": "Notify Party Country"
+  },
+  {
+   "fieldname": "d_notify_party_phone",
+   "fieldtype": "Data",
+   "label": "Notify Party Phone"
+  },
+  {
+   "fieldname": "d_notify_party_email",
+   "fieldtype": "Data",
+   "label": "Notify Party Email"
+  },
+  {
+   "fieldname": "d_notify_party_fax_number",
+   "fieldtype": "Data",
+   "label": "Notify Party Fax Number"
+  },
+  {
+   "fieldname": "d_notify_party_poc",
+   "fieldtype": "Data",
+   "label": "Notify Party POC"
+  }
+ ],
+ "hide_toolbar": 1,
+ "icon": "fa fa-user",
+ "modified": "2021-04-18 21:44:41.188283",
+ "modified_by": "Administrator",
+ "module": "Manage Vehicle Shipping",
+ "name": "Customer Setup",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PGL-User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
