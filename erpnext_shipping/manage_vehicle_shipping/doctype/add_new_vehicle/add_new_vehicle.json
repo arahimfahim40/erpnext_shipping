@@ -10,6 +10,7 @@
   "sb_info",
   "lk_user_company",
   "lnk_customer_name",
+  "customer_company",
   "d_vin",
   "d_year",
   "d_make",
@@ -128,11 +129,12 @@
    "fieldname": "lk_user_company",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Select Company",
-   "options": "User Company List",
+   "label": "Customer Unique Id",
+   "options": "Customer Setup",
    "reqd": 1
   },
   {
+   "fetch_from": "lk_user_company.d_company_poc_name",
    "fieldname": "lnk_customer_name",
    "fieldtype": "Data",
    "label": "Customer Name",
@@ -201,7 +203,7 @@
    "fieldname": "d_reported_by",
    "fieldtype": "Data",
    "label": "Reported by",
-   "options": "User"
+   "read_only": 1
   },
   {
    "fieldname": "no_days_pfp",
@@ -244,6 +246,7 @@
   {
    "fieldname": "d_auction_invoice",
    "fieldtype": "Attach",
+   "in_list_view": 1,
    "label": "Auction Invoice"
   },
   {
@@ -251,9 +254,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "now",
    "fieldname": "d_report_date_pgl",
    "fieldtype": "Datetime",
-   "label": "Report Date To PGL"
+   "label": "Report Date To PGL",
+   "read_only": 1
   },
   {
    "fieldname": "d_auction_city",
@@ -693,10 +698,17 @@
    "fieldname": "booking_number_detail",
    "fieldtype": "Data",
    "label": "Booking Number Detail"
+  },
+  {
+   "fetch_from": "lk_user_company.user_company_list",
+   "fieldname": "customer_company",
+   "fieldtype": "Data",
+   "label": "Customer Company Name",
+   "reqd": 1
   }
  ],
  "hide_toolbar": 1,
- "modified": "2021-04-19 23:46:32.354681",
+ "modified": "2021-04-20 03:12:18.578022",
  "modified_by": "Administrator",
  "module": "Manage Vehicle Shipping",
  "name": "Add New Vehicle",

@@ -1,6 +1,6 @@
 {
  "allow_import": 1,
- "autoname": "CUS.#####",
+ "autoname": "field:d_cus_id",
  "creation": "2021-04-18 09:19:29.735055",
  "doctype": "DocType",
  "document_type": "Document",
@@ -280,7 +280,7 @@
  ],
  "hide_toolbar": 1,
  "icon": "fa fa-user",
- "modified": "2021-04-18 21:44:41.188283",
+ "modified": "2021-04-20 03:15:54.959991",
  "modified_by": "Administrator",
  "module": "Manage Vehicle Shipping",
  "name": "Customer Setup",

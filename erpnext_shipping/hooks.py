@@ -20,7 +20,14 @@ fixtures = ["Role",
 	[
 		"name","in", ["View Shippment-Client","Add New Vehicle-Client"]
 	] 
+	]},
+	{"dt": "Print Format",
+		"filters": [
+	[
+		"name","in", ["DockReceipt","BOL","ContactForm","NonHazadousDeclaration"]
+	] 
 	]}
+
 
 
 ] 
@@ -44,7 +51,7 @@ fixtures = ["Role",
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+# doctype_list_js = {"doctype" : "public/js/view_towing_rate_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
