@@ -10,7 +10,7 @@ from erpnext_shipping import __version__ as version
 setup(
 	name='erpnext_shipping',
 	version=version,
-	description='Manage PGL Shipping',
+	description='Manage Vehicle Shipping',
 	author='Frappe',
 	author_email='arahimfahim40@hotmail.com',
 	packages=find_packages(),
