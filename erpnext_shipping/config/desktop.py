@@ -5,10 +5,10 @@ from frappe import _
 def get_data():
 	return [
 		{
-			"module_name": "Manage PGL Shipping",
+			"module_name": "Manage Vehicle Shipping",
 			"color": "grey",
 			"icon": "icon-book",
 			"type": "module",
-			"label": _("Manage PGL Shipping")
+			"label": _("Manage Vehicle Shipping")
 		}
 	]
