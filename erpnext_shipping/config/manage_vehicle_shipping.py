@@ -23,7 +23,7 @@ def get_data():
 				{
 					"type": "doctype",
 					"name": "Vehicle Management",
-					"description": _("View Vehicles")
+					"description": _("Add New Vehicle")
 					
 				}
 			]
