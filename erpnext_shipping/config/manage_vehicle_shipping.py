@@ -23,7 +23,7 @@ def get_data():
 				{
 					"type": "doctype",
 					"name": "Add New Vehicle",
-					"description": _("Add new vehcile")
+					"description": _("Add new vehicle")
 					
 				}
 			]
