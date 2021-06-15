@@ -3,12 +3,12 @@ from __future__ import unicode_literals
 from . import __version__ as app_version
 
 app_name = "erpnext_shipping"
-app_title = "Manage Vehicle Shipping"
+app_title = "Manage PGL Shipping"
 app_publisher = "Frappe"
 app_description = "Manage Vehicle Shipping"
 app_icon = "icon-book"
-app_color = "grey"
-app_email = "maria.noor09@yahoo.com"
+app_color = "red"
+app_email = "arahimfahim40@hotmail.com"
 app_license = "MIT"
 
 
