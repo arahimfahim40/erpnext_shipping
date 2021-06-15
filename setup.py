@@ -12,7 +12,7 @@ setup(
 	version=version,
 	description='Manage Vehicle Shipping',
 	author='Frappe',
-	author_email='maria.noor09@yahoo.com',
+	author_email='arahimfahim40@hotmail.com',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
