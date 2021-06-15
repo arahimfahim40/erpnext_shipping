@@ -22,8 +22,8 @@ def get_data():
 			"items": [
 				{
 					"type": "doctype",
-					"name": "Add New Vehicle",
-					"description": _("Add new vehcile")
+					"name": "Vehicle Management",
+					"description": _("View Vehicles")
 					
 				}
 			]
