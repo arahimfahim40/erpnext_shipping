@@ -1,1 +1,1 @@
-Manage PGL Shipping
+Manage Vehicle Shipping
