@@ -7,7 +7,7 @@ app_title = "Manage Vehicle Shipping"
 app_publisher = "Frappe"
 app_description = "Manage Vehicle Shipping"
 app_icon = "icon-book"
-app_color = "red"
+app_color = "grey"
 app_email = "arahimfahim40@hotmail.com"
 app_license = "MIT"
 
